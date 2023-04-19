@@ -131,3 +131,19 @@ body {
     width: 100%;
   }
 }
+
+@media only screen and (min-width: 1000px) {
+  * {
+    font-size: 120%;
+  }
+
+  .main {
+    max-width: 800px;
+    padding: 120px 80px 60px;
+  }
+
+  .travel-card__image {
+    width: 150px;
+    height: 202px;
+  }
+}
