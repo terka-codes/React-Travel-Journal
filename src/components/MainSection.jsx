@@ -6,13 +6,10 @@ const MainSection = () => {
     const cards = data.map(item => {
         const hrEl = item.id >= data.length ? false : true
         return (
-            <>
-                <TravelCard 
-                    key={item.id}
-                    item={item}
-                />
+            <div key={item.id}>
+                <TravelCard item={item} />
                 {hrEl && <hr className="travel-card__hr" key={`hr-${item.id}`} />}
-            </>
+            </div>
         )
     })
   return (
